@@ -1,0 +1,436 @@
+{
+	"info": {
+		"_postman_id": "360c5af5-a2e3-4721-8a42-68501ad9e877",
+		"name": "Biblioteca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14151785"
+	},
+	"item": [
+		{
+			"name": "Autor",
+			"item": [
+				{
+					"name": "GetAutores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Autor",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Autor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAutor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Autor?id=3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Autor"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateAutor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"nombre\": \"Esteban Hernández\",\r\n   \"apellido\": \"Castelló\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Autor?id=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Autor"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsertAutor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"nombre\": \"Tatiana Montenegro\",\r\n   \"apellido\": \"Castelló\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Autor",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Autor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAutoreById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Autor/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Autor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Editorial",
+			"item": [
+				{
+					"name": "GetEditoriales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Editorial",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Editorial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteEditorial",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Editorial?id=6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Editorial"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateEditorial",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Editorial 1 editado\",\r\n  \"direccion\": \"Direccion Editorial 1 editado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Editorial?id=6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Editorial"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsertEditorial",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Editorial 1\",\r\n  \"direccion\": \"Direccion Editorial 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Editorial",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Editorial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEditorialById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Editorial/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Editorial",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Libro",
+			"item": [
+				{
+					"name": "GetLibros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Libro",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Libro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteLibro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Libro?id=6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Libro"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateLibro",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"titulo\": \"Libro 1 EDITADO\",\r\n  \"isbn\": \"ISBN 0-1234-56789-0\",\r\n  \"autorId\": 1,\r\n  \"editorialId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Libro?id=5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Libro"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsertLibro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"titulo\": \"Libro 1\",\r\n  \"isbn\": \"ISBN 0-1234-56789-0\",\r\n  \"autorId\": 1,\r\n  \"editorialId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Libro",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Libro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetLibroById Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/Libro/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Libro",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://localhost:7030",
+			"type": "string"
+		}
+	]
+}
